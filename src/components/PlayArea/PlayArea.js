@@ -1,5 +1,6 @@
 
 import * as React from 'react';
+import { Deck } from '../../assets/Cards';
 import {CardList} from '../CardList/CardList';
 
 
@@ -7,20 +8,13 @@ class PlayArea extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      // spades, hearts, diamonds, clubs
-      cardIcons: [
-        '🂡', '🂢', '🂣', '🂤', '🂥', '🂦', '🂧', '🂨', '🂩', '🂪', '🂫', '🂭', '🂮', 
-        '🂱', '🂲', '🂳', '🂴', '🂵', '🂶', '🂷', '🂸', '🂹', '🂺', '🂻', '🂽', '🂾',
-        '🃁', '🃂', '🃃', '🃄', '🃅', '🃆', '🃇', '🃈', '🃉', '🃊', '🃋', '🃍', '🃎',
-        '🃑', '🃒', '🃓', '🃔', '🃕', '🃖', '🃗', '🃘', '🃙', '🃚', '🃛', '🃝', '🃞',
-        '🂠'
-      ]
+      deck: Deck
     };
   }
 
   render() {
     const handleShuffle = () => {
-      const shuffled = [ ...this.state.cardIcons ];
+      const shuffled = [ ...this.state.deck ];
       // For loop copied from https://www.w3docs.com/snippets/javascript/how-to-randomize-shuffle-a-javascript-array.html
       for (let idx = shuffled.length - 1; idx > 0; idx--) {
         const swapIdx = Math.floor(Math.random() * (idx + 1));
@@ -31,14 +25,14 @@ class PlayArea extends React.Component {
       }
 
       this.setState({
-        cardIcons: shuffled
+        deck: shuffled
       });
     }
 
     return (
       <div>
         <button className='Shuffle' onClick={handleShuffle}>Shuffle</button>
-        <CardList cardIcons={this.state.cardIcons} />
+        <CardList deck={this.state.deck} />
       </div> 
     )
   }

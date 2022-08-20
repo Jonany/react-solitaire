@@ -1,4 +1,23 @@
 .Card {
-  color: red;
   font-size: 12rem;
+}
+
+.Spades {
+  /* background-color: #05878a; */
+  color: #074e67;
+}
+
+.Hearts {
+  /* background-color: #67074e; */
+  color: #074e67;
+}
+
+.Diamonds {
+  /* background-color: #5a175d; */
+  color: #074e67;
+}
+
+.Clubs {
+  /* background-color: #074e67; */
+  color: #074e67;
 }

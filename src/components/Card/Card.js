@@ -3,7 +3,11 @@ import './Card.css';
 
 class Card extends React.Component {
   render() {
-    return (<div className='Card'>{this.props.icon}</div>)
+    return (
+      <div className={'Card ' + this.props.card.Suite.Name}>
+        {this.props.card.Icon}
+      </div>
+    )
   }
 }
 

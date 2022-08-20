@@ -7,7 +7,7 @@ class CardList extends React.Component {
   render() {
     return (
       <div className='CardList'>
-        {this.props.cardIcons.map((icon, iconIdx) => <Card key={iconIdx} icon={icon} />)}
+        {this.props.deck.map((card, cardIdx) => <Card key={cardIdx} card={card} />)}
       </div>
     )
   }
