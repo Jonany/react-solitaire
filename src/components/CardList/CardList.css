@@ -1,3 +1,4 @@
 .CardList {
-  column-count: 14;
+  display: grid;
+  grid-template-columns: repeat(13, 7vw);
 }
