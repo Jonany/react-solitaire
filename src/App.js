@@ -6,7 +6,9 @@ function App() {
 
   return (
     <div className="App">
-      {cards}
+      <div className='CardList'>
+        {cards}
+      </div>
     </div>
   );
 }
