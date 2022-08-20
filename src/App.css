@@ -1,12 +1,3 @@
 .App {
   text-align: center;
 }
-
-.Card {
-  color: red;
-  font-size: 12rem;
-}
-
-.CardList {
-  column-count: 14;
-}

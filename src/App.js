@@ -1,14 +1,10 @@
 import './App.css';
+import {PlayArea} from './components/PlayArea/PlayArea'
 
 function App() {
-  const cardIcons = ['🂡', '🂢', '🂣', '🂤', '🂥', '🂦', '🂧', '🂨', '🂩', '🂪', '🂫', '🂭', '🂮'];
-  const cards = cardIcons.map((card) => <div className='Card'>{card}</div>)
-
   return (
     <div className="App">
-      <div className='CardList'>
-        {cards}
-      </div>
+      <PlayArea />
     </div>
   );
 }
