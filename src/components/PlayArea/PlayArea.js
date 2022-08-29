@@ -2,6 +2,7 @@
 import * as React from 'react';
 import { Deck } from '../../assets/Cards';
 import {CardList} from '../CardList/CardList';
+import {Pile} from '../Pile/Pile';
 
 
 class PlayArea extends React.Component {
@@ -31,8 +32,9 @@ class PlayArea extends React.Component {
 
     return (
       <div>
-        <button className='Shuffle' onClick={handleShuffle}>Shuffle</button>
-        <CardList deck={this.state.deck} />
+        {/* <button className='Shuffle' onClick={handleShuffle}>Shuffle</button>
+        <CardList deck={this.state.deck} /> */}
+        <Pile cards={this.state.deck.slice(0, 13)} />
       </div> 
     )
   }
