@@ -46,3 +46,7 @@ To give myself something to try new things and possibly even deploy to app store
 - [Solitaire Rules example 2](https://bicyclecards.com/how-to-play/solitaire/)
 - [Solitaire Rules example with pretty pictures](https://www.vegassolitaire.com/solitaire/solitaire-rules/)
 - [Klondike Solitaire rules](https://www.vegassolitaire.com/klondike-solitaire/)
+- [SVG playing cards, Brescia](https://commons.wikimedia.org/wiki/Category:Brescia_deck)
+- [SVG playing cards, Byron Knoll](https://commons.wikimedia.org/wiki/Category:Playing_cards_set_by_Byron_Knoll)
+- [SVG playing cards, English pattern](https://commons.wikimedia.org/wiki/Category:SVG_English_pattern_playing_cards)
+- [SVG playing cards with face cards](https://commons.wikimedia.org/wiki/Category:SVG_playing_cards_4)
