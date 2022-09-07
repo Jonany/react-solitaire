@@ -1,8 +1,7 @@
 
 import * as React from 'react';
 import { Deck } from '../../assets/Cards';
-import {CardList} from '../CardList/CardList';
-import {Pile} from '../Pile/Pile';
+import { Tableau } from '../Tableau/Tableau';
 
 
 class PlayArea extends React.Component {
@@ -15,7 +14,7 @@ class PlayArea extends React.Component {
 
   render() {
     const handleShuffle = () => {
-      const shuffled = [ ...this.state.deck ];
+      const shuffled = [...this.state.deck];
       // For loop copied from https://www.w3docs.com/snippets/javascript/how-to-randomize-shuffle-a-javascript-array.html
       for (let idx = shuffled.length - 1; idx > 0; idx--) {
         const swapIdx = Math.floor(Math.random() * (idx + 1));
@@ -32,13 +31,11 @@ class PlayArea extends React.Component {
 
     return (
       <div>
-        {/* <button className='Shuffle' onClick={handleShuffle}>Shuffle</button>
-        <CardList deck={this.state.deck} /> */}
-        <Pile cards={this.state.deck.slice(0, 13)} />
-      </div> 
+        <Tableau />
+      </div>
     )
   }
 }
 
-export {PlayArea}
+export { PlayArea }
 

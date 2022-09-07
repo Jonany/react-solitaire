@@ -1,0 +1,15 @@
+.Tableau {
+  display: grid;
+  grid-template-columns: repeat(7, 14vw);
+  justify-content: space-evenly;
+}
+
+.Pile {
+  border: 0.1rem black solid;
+  max-width: fit-content;
+}
+
+.PileCard {
+  color: red;
+  font-size: 12rem;
+}
